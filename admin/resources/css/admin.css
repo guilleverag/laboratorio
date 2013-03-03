@@ -1,0 +1,246 @@
+body { 
+  background-color: #F0F0F0;
+  color: #999999;
+  font-family: "HelveticaNeueNEW",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  height: 100%;
+  line-height: 18px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.bubble-background {
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #fcfcfc 0%, #c1e6ee 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fcfcfc), color-stop(100%,#c1e6ee)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #fcfcfc 0%,#c1e6ee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #fcfcfc 0%,#c1e6ee 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #fcfcfc 0%,#c1e6ee 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #fcfcfc 0%,#c1e6ee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#c1e6ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.spinner {
+  background: transparent;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.spinner > div {
+  background: transparent;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.spinner > div > div {
+  background: url("../img/loading.gif") no-repeat scroll 50% 50% transparent;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.extra {
+  height: auto !important;
+  margin: 0 auto -52px;
+  min-height: 100%;
+}
+
+.main {
+  margin: 0 auto;
+  position: relative;
+  width: 940px;
+  z-index: 1;
+}
+
+#content {
+  height: 729px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+#content > div {
+  height: 940px;
+  margin-top: -345px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 974px;
+}
+
+.inner {
+  height: 252px;
+  margin-left: 387px;
+  margin-top: 255px;
+  position: relative;
+  width: 252px;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+}
+
+#menu {
+  display: block;
+  height: 252px;
+  width: 252px;
+  list-style: none outside none;
+}
+
+ul.reset li {
+  position: absolute;
+}
+
+#menu > li > a {
+  display: block;
+  height: 168px;
+  position: relative;
+  width: 168px;
+  color: #5E5E5E;
+  outline: medium none;
+  text-decoration: none;
+  border: none;
+}
+
+#menu > li > a img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  vertical-align: top;
+  display:none;
+  border:none;
+}
+
+#menu > li > a.active img:last-child{
+	display:block;
+}
+
+#menu > li > a.desactive img:first-child{
+	display:block;
+}
+
+.menu_box {
+  height: 252px;
+  left: -44px;
+  position: absolute;
+  top: -48px;
+  width: 252px;
+  z-index: 99;
+}
+
+.menu_box .images {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.images span {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.images .nav1 {
+	background: url("../img/nav1_hover.png") no-repeat scroll 0 0 transparent;
+	transform: rotate(359deg);
+	-ms-transform: rotate(359deg); /* IE 9 */
+	-webkit-transform: rotate(359deg); /* Safari and Chrome */
+	-o-transform: rotate(359deg); /* Opera */
+	-moz-transform: rotate(359deg); /* Firefox */
+}
+.images .nav2 {
+	background: url("../img/nav2_hover.png") no-repeat scroll 0 0 transparent;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	-o-transform: rotate(45deg); /* Opera */
+	-moz-transform: rotate(45deg); /* Firefox */
+}
+.images .nav3 {
+	background: url("../img/nav3_hover.png") no-repeat scroll 0 0 transparent;
+	transform: rotate(105deg);
+	-ms-transform: rotate(105deg); /* IE 9 */
+	-webkit-transform: rotate(105deg); /* Safari and Chrome */
+	-o-transform: rotate(105deg); /* Opera */
+	-moz-transform: rotate(105deg); /* Firefox */
+}
+.images .nav4 {
+	background: url("../img/nav4_hover.png") no-repeat scroll 0 0 transparent;
+	transform: rotate(155deg);
+	-ms-transform: rotate(155deg); /* IE 9 */
+	-webkit-transform: rotate(155deg); /* Safari and Chrome */
+	-o-transform: rotate(155deg); /* Opera */
+	-moz-transform: rotate(155deg); /* Firefox */
+}
+.images .nav5 {
+	background: url("../img/nav5_hover.png") no-repeat scroll 0 0 transparent;
+	transform: rotate(200deg);
+	-ms-transform: rotate(200deg); /* IE 9 */
+	-webkit-transform: rotate(200deg); /* Safari and Chrome */
+	-o-transform: rotate(200deg); /* Opera */
+	-moz-transform: rotate(200deg); /* Firefox */
+}
+.images .nav6 {
+	background: url("../img/nav6_hover.png") no-repeat scroll 0 0 transparent;
+	transform: rotate(255deg);
+	-ms-transform: rotate(255deg); /* IE 9 */
+	-webkit-transform: rotate(255deg); /* Safari and Chrome */
+	-o-transform: rotate(255deg); /* Opera */
+	-moz-transform: rotate(255deg); /* Firefox */
+}
+.images .nav7 {
+	background: url("../img/nav7_hover.png") no-repeat scroll 0 0 transparent;
+	transform: rotate(305deg);
+	-ms-transform: rotate(305deg); /* IE 9 */
+	-webkit-transform: rotate(305deg); /* Safari and Chrome */
+	-o-transform: rotate(305deg); /* Opera */
+	-moz-transform: rotate(305deg); /* Firefox */
+}
+
+.tittles {
+  line-height: 18px;
+  position: relative;
+  text-align: center;
+}
+
+.tittles > div {
+  left: 0;
+  padding-left: 40px;
+  padding-top: 88px;
+  position: absolute;
+  top: 0;
+  width: 175px;
+  display: none;
+  border: none;
+}
+
+.tittles > div > h2 {
+  color: #595E65;
+  font-size: 32px;
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  letter-spacing: -1px;
+  padding-bottom: 6px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.16);
+}

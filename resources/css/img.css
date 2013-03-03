@@ -1,0 +1,20 @@
+/* ----------------------------------------------------
+   created with http://www.texturepacker.com 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:fe7b1c9696a33695b15d028dd12fb3c0$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../images/img.png);}
+
+.about_more {width:22px; height:44px; background-position: -50px -136px}
+.module_more {width:22px; height:44px; background-position: -26px -136px}
+.news_link {width:22px; height:44px; background-position: -2px -136px}
+.page1_img1 {width:131px; height:132px; background-position: -2px -2px}
+.phone-marker {width:26px; height:29px; background-position: -74px -136px}
+.scroll-to-top {width:23px; height:17px; background-position: -102px -136px}
