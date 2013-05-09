@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Medex</title>
+	<title>Laboratorio Clínico Medex</title>
 
     <?php templateHeaderInclude('../resources/');?>
 </head>
@@ -14,8 +14,8 @@
         <?php templateHeader(false, false, false, true);?>
 		        
         <!-- Main -->
-        <div id="rt-main" class="hborder">
-        	<div class="rt-container">
+        <div id="rt-main" class="container">
+        	<div class="row-fluid">
             	<div class="span12">
                 	<div class="rt-block">
                     	<div class="itemHeader">

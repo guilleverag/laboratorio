@@ -4,7 +4,7 @@ include_once('resources/template/template.php');?>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Medex</title>
+	<title>Laboratorio Clínico Medex</title>
 
     <?php templateHeaderInclude();?>
 </head>
@@ -68,7 +68,7 @@ include_once('resources/template/template.php');?>
                                 <h2 class="title">Resultados</h2>
                             </div>
                             <div class="k2ItemsBlock top_block ideas">
-                                <ul>
+                                <ul class="unstyled">
                                     <li class="even lastItem firstItem">
                                         <div class="moduleItemIntrotext">
                                             <p>Ver los resultados de tus examenes desde la comodidad de tu casa, solo con tu factura.</p>
@@ -94,7 +94,7 @@ include_once('resources/template/template.php');?>
                                 <h2 class="title">Presupuesto</h2>
                             </div>
                             <div class="k2ItemsBlock top_block ideas">
-                                <ul>
+                                <ul class="unstyled">
                                     <li class="even lastItem firstItem">
                                         <div class="moduleItemIntrotext">
                                             <p>Adquiere tu presupuesto incluso antes de ir al laboratorio.</p>
@@ -120,7 +120,7 @@ include_once('resources/template/template.php');?>
                                 <h2 class="title">Indicaciones</h2>
                             </div>
                             <div class="k2ItemsBlock top_block ideas">
-                                <ul>
+                                <ul class="unstyled">
                                     <li class="even lastItem firstItem">
                                         <div class="moduleItemIntrotext">
                                             <p>Debes hacer un examen y no sabes como? nosotros te indicamos como hacerlo.</p>
@@ -144,9 +144,9 @@ include_once('resources/template/template.php');?>
         </div>
         
         <!-- Main -->
-        <div id="rt-main" class="vborder">
-        	<div class="rt-container">
-            	<div class="rt-grid-8">
+        <div id="rt-main" class="container">
+        	<div class="row-fluid">
+            	<div class="span8 vborder">
                 	<div class="rt-block">
                     	<div class="rt-mainbody">
                             <div class="itemContainer itemContainerLast">
@@ -158,26 +158,23 @@ include_once('resources/template/template.php');?>
                                         </h3>
                                     </div>
                                     <div class="catItemBody">
+                                        <img src="resources/images/logo/logo_gris.png" style="display: block; float: left; margin-right: 10px;">
                                         <div class="catItemIntroText">
                                             <p>Cuenta con un equipo de profesionales en Bioanálisis altamente calificados, dedicados a utilizar la tecnología de vanguardia certificada por Norma ISO 9001, que permite ofrecer al médico y al paciente una variedad de pruebas de alta exactitud y confiabilidad,  la cuales puedan detectar enfermedades en etapas subclínicas, corroborar diagnósticos, obtener información sobre el pronóstico de una enfermedad, vigilar un tratamiento y precisar factores de riesgo.</p>
+                                            
+                                            <div class="clr"></div>
+                                        	<div class="clr"></div>
                                             <div class="catItemReadMore">
                                                 <a class="k2ReadMore" href="laboratorio/"> mas del laboratorio </a>
                                             </div>
                                         </div>
-                                        <div class="clr"></div>
-                                        <div class="clr"></div>
                                     </div>
-                                    <div class="clr"></div>
-                                    <div class="clr"></div>
-                                    <div class="clr"></div>
-                                    <div class="clr"></div>
                                 </div>
-                                <div class="clr"></div>
                           	</div>
                         </div>
                     </div>
                     <div class="rt-content-bottom">
-                    	<div class="rt-grid-8 rt-alpha rt-omega">
+                    	<div class="span12">
                         	<div class="news">
                             	<div class="rt-block">
                                 	<div class="module-title">
@@ -194,43 +191,37 @@ include_once('resources/template/template.php');?>
                                 <a title="view news archive" href="/noticias" class="moduleCustomLink">ver todas las noticias</a>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
                 
-                <div class="rt-grid-4">
+                <div class="span4">
                     <div id="rt-sidebar-a">
                         <div class="sidebar">
                             <div class="rt-block">
                                 <div id="k2ModuleBox81" class="k2ItemsBlock sidebar">
-                                    <ul>
+                                    <ul class="unstyled">
                                         <li class="even firstItem">
                                             <a class="moduleItemTitle" href="">Contactanos</a>
                                             <div class="moduleItemIntrotext">
-                                            	<p>Antreue kertsde lauda ntiotremase naperiam eaqea quae ab illo.</p>
+                                            	<p>¿Quiere comunicarse directamente con nosotros?</p>
+                                                <p>Estamos a la orden.</p>
                                             </div>
-                                            <div class="clr"></div>
-                                            <div class="clr"></div>
                                             <a class="moduleItemReadMore" href="contacto/"> Ver </a>
                                             <div class="clr"></div>
                                         </li>
                                         <li class="odd">
                                         	<a class="moduleItemTitle" href="">Misi&oacute;n y Visi&oacute;n</a>
                                             <div class="moduleItemIntrotext">
-                                            	<p>Hisas deled ut persnde taea hera kertsde ntreue lertyase</p>
+                                            	<p>Siempre en el cumplimiento de nuestros objetivos.</p>
                                             </div>
-                                            <div class="clr"></div>
-                                            <div class="clr"></div>
                                             <a class="moduleItemReadMore" href="laboratorio/objetivos.php"> Ver </a>
                                             <div class="clr"></div>
                                         </li>
                                         <li class="even">
                                         	<a class="moduleItemTitle" href="">Nuevos Proyectos</a>
                                             <div class="moduleItemIntrotext">
-                                            	<p>Nomnisas dela kasea miserta erase lerode ferade vasera</p>
+                                            	<p>Para brindar un mejor servicio, conozca nuestros avances.</p>
                                             </div>
-                                            <div class="clr"></div>
-                                            <div class="clr"></div>
                                             <a class="moduleItemReadMore" href="laboratorio/proyectos.php"> Ver </a>
                                             <div class="clr"></div>
                                         </li>
@@ -239,23 +230,18 @@ include_once('resources/template/template.php');?>
                                             <div class="moduleItemIntrotext">
                                             	<p>Conozca nuestro capacitado personal, que lo ayudara en el proceso de su bienestar.</p>
                                             </div>
-                                            <div class="clr"></div>
-                                            <div class="clr"></div>
                                             <a class="moduleItemReadMore" href="laboratorio/personal.php"> Ver </a>
                                             <div class="clr"></div>
                                         </li>
-                                        <li class="clearList lastItem"></li>
+                                        <li class="even"></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="clear"></div>
             </div>
         </div>
-        
-        <div class="clear"></div>
         
         <!-- Footer -->
     	<?php templateFooter();?>

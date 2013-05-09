@@ -38,7 +38,7 @@
 				$news.="<img src=\"".$r['urlImg']."\">";
 				
 			$news.="<a href=\"http://lab.ve2fsoft.com/noticias/view.php?id=".$r['idnoticias']."\" class=\"lead\">".$r['titulo']."</a><br>
-					".$r['descripcion']."
+					<p>".$r['descripcion']."</p>
 				</div>
 			</li>";
 		}

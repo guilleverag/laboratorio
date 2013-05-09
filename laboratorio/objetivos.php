@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Medex</title>
+	<title>Laboratorio Clínico Medex</title>
 
     <?php templateHeaderInclude('../resources/');?>
 </head>
@@ -14,8 +14,8 @@
         <?php templateHeader(false, true);?>
 		        
         <!-- Main -->
-        <div id="rt-main" class="hborder">
-        	<div class="rt-container">
+        <div id="rt-main" class="container">
+        	<div class="row-fluid">
             	<div class="span8">
                 	<div class="rt-block">
                     	<div class="rt-mainbody">
@@ -29,7 +29,7 @@
                            	</div>
                             <div class="itemBody">
                                 <div class="itemFullText">
-                                	<p>Integer vel nulla ut erat faucibus auctor in in felis. Proin a justo arcu. Sed commodo dolor vel velit elementum eget volutpat nisi placerat. In tellus nulla, lacinia a vestibulum at, dapibus sed lorem. Nunc porta pharetra sollicitudin. Quisque a risus eu lectus fringilla sodales eu ac felis. Suspendisse potenti. Etiam at semper enim. Nunc varius mauris leo, ut facilisis orci. Praesent vehicula, lectus id condimentum suscipit, ipsum mauris vulputate elit, quis auctor turpis magna fringilla justo. Nunc felis risus, scelerisque vitae pulvinar id, bibendum sed sem. Fusce vitae imperdiet enim.</p>
+                                	<p>Somos un equipo líder que cuenta con recurso humano calificado, que presta un servicio de laboratorio clínico integral con eficiencia, eficacia y valores esenciales de confianza, honestidad y responsabilidad, comprometidos con la comunidad para brindar un servicio confiable y de óptima calidad.</p>
                                 </div>
                         	</div>
                             
@@ -42,7 +42,7 @@
                            	</div>
                             <div class="itemBody">
                                 <div class="itemFullText">
-                                	<p>Integer vel nulla ut erat faucibus auctor in in felis. Proin a justo arcu. Sed commodo dolor vel velit elementum eget volutpat nisi placerat. In tellus nulla, lacinia a vestibulum at, dapibus sed lorem. Nunc porta pharetra sollicitudin. Quisque a risus eu lectus fringilla sodales eu ac felis. Suspendisse potenti. Etiam at semper enim. Nunc varius mauris leo, ut facilisis orci. Praesent vehicula, lectus id condimentum suscipit, ipsum mauris vulputate elit, quis auctor turpis magna fringilla justo. Nunc felis risus, scelerisque vitae pulvinar id, bibendum sed sem. Fusce vitae imperdiet enim.</p>
+                                	<p>Ser el laboratorio clínico integral especializado, líder en innovación, con tecnología de punta, de referencia a nivel nacional e internacional y prestar un servicio eficaz y eficiente de la más alta calidad para brindar al paciente comodidad, atención de primera, economía y rapidez.</p>
                                 </div>
                         	</div>
                         </div>

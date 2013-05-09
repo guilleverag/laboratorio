@@ -1,17 +1,18 @@
-﻿<?php include_once('../resources/template/template.php');?>
+﻿<?php 
+include_once('../../resources/template/template.php');?>
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Laboratorio Clínico Medex</title>
 
-    <?php templateHeaderInclude('../resources/');?>
+    <?php templateHeaderInclude('../../resources/');?>
 </head>
 
 <body>
 	<div class="wrapper">
 		<!-- Header menu -->
-        <?php templateHeader(false, false, false, false, true);?>
+        <?php templateHeader(false, false, true);?>
 		        
         <!-- Main -->
         <div id="rt-main" class="container">
@@ -24,7 +25,7 @@
                             <div class="itemHeader">
                                 <div class="module-title">
                                     <h2 class="title">
-                                        Cont&aacute;ctanos
+                                        Solicitud de Registro
                                     </h2>
                                 </div>
                            	</div>
@@ -32,26 +33,21 @@
                                 <form id="contact-form" class="contact-form labform">
                                     <div class="success" style="display: none;">
                                         Enviado satisfactoriamente!
-                                        <strong> Estaremos en contacto pronto.</strong>
+                                        <strong> Estaremos en contacto pronto, con sus datos para acceder a nuestro sistema en línea.</strong>
                                     </div>
                                     <fieldset>
                                         <label class="name">
-                                            <input type="text" value="" placeholder="Nombre:">
+                                            <input name="nombre" type="text" value="" placeholder="Nombre:">
                                         </label>
                                         <span class="empty" style="display: none;">*Este campo es obligatorio.</span>
                                         <br>
                                         <label class="email">
-                                            <input type="email" value="" placeholder="Email:">
-                                        </label>
-                            			<span class="empty" style="display: none;">*Este campo es obligatorio.</span>
-                                        <br>
-                                        <label class="phone">
-                                            <input type="text" value="" placeholder="Telefono:">
+                                            <input name="email" type="text" value="" placeholder="Email:">
                                         </label>
                                         <span class="empty" style="display: none;">*Este campo es obligatorio.</span>
                                         <br>
-                                        <label class="message">
-                                            <textarea placeholder="Mensaje:"></textarea>
+                                        <label class="email">
+                                            <input name="telefono" type="text" value="" placeholder="Telefono:">
                                         </label>
                                         <span class="empty" style="display: none;">*Este campo es obligatorio.</span>
                                     </fieldset>
@@ -60,34 +56,35 @@
                                         <a class="btn btn-small" data-type="submit" href="javascript:void(false)" onClick="javascript:FormSubmit('#contact-form');">Enviar</a>
                                     </div>
                                     <div class="clr"></div>
+                                    <div class="clr"></div>
                                 </form>
                             </div>
                         </div>
                     </div>
 				</div>
                 
-                <div class="span5">
-                	<div class="rt-block">
-                    	<div class="map">
-                        	<iframe width="100%" height="350" src="http://maps.google.co.ve/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Maternidad+La+Floresta+Maracay,+Aragua&amp;aq=&amp;sll=10.26748,-67.589779&amp;sspn=0.01706,0.027037&amp;ie=UTF8&amp;hq=&amp;hnear=Maternidad+La+Floresta,+Calle+Comercio,+Barrio+La+Lagunita,+Maracay,+Girardot,+Aragua&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                <div class="span4">
+                	<div id="rt-sidebar-a">
+                        <div class="sidebar">
+                            <div class="rt-block">
+                                <div class="itemHeader">
+                                    <div class="module-title">
+                                        <h4 class="title">
+                                            Se parte de nuestros selectos <?php echo isset($_GET['cliente']) ? 'clientes' : 'doctores';?>
+                                        </h4>
+                                    </div>
+                                </div>
+                                
+                                <div class="itemBody">
+                                    <div class="itemFullText">
+                                        <p>Realiza la solicitud completando el formulario.</p>
+                                        <p>Tan pronto la recibamos, procederemos a enviarle vía email una notificación con la respuesta a su solicitud.</p>
+                                        <p>De ser aprobada, encontrara los datos esenciales para consultar sus resultados a través del sistema.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <address class="address">
-                            <strong class="lead">
-                                Avenida Las Delicias con Calle Comercio,
-                                <br>
-                                Maracay. Edo. Aragua. Venezuela.
-                            </strong>
-                            <br>
-                            <span>Telefono:</span>
-                            +1 800 123 4567
-                            <br>
-                            <span>FAX:</span>
-                            +1 504 889 9898
-                            <br>
-                            E-mail:
-                            <a class="link-2" href="#">mail@medex.com</a>
-                        </address>
-                    </div>
+                	</div>
                 </div>
                 
         	</div>
@@ -96,8 +93,8 @@
         <div class="clear"></div>
         <br><br>
         <!-- Footer -->
-    	<?php templateFooter('../resources/');?>
-        <script src="../resources/js/jquery.placeholder.js?<?php echo filemtime(dirname(__FILE__).'/../resources/js/jquery.placeholder.js'); ?>" type="text/javascript"></script>
+    	<?php templateFooter('../../resources/');?>
+        <script src="../../resources/js/jquery.placeholder.js?<?php echo filemtime(dirname(__FILE__).'/../../resources/js/jquery.placeholder.js'); ?>" type="text/javascript"></script>
   	</div>
 </body></html>
 <script>

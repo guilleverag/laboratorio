@@ -1,9 +1,11 @@
-﻿<?php include_once('../../resources/template/template.php');?>
+﻿<?php 
+include_once('../../resources/php/cargar_xml_examenes.php');
+include_once('../../resources/template/template.php');?>
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Medex</title>
+	<title>Laboratorio Clínico Medex</title>
 
     <?php templateHeaderInclude('../../resources/');?>
 </head>
@@ -14,8 +16,8 @@
         <?php templateHeader(false, false, true);?>
 		        
         <!-- Main -->
-        <div id="rt-main" class="hborder">
-        	<div class="rt-container">
+        <div id="rt-main" class="container">
+        	<div class="row-fluid">
             	<div class="span7">
                 	<div class="rt-block">
                     	<div class="itemHeader">

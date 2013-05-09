@@ -1,11 +1,11 @@
 ﻿<?php 
-//include_once('../../resources/php/cargar_xml.php');
+include_once('../../resources/php/cargar_xml.php');
 include_once('../../resources/template/template.php');?>
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Medex</title>
+	<title>Laboratorio Clínico Medex</title>
 
     <?php templateHeaderInclude('../../resources/');?>
 </head>
@@ -16,10 +16,10 @@ include_once('../../resources/template/template.php');?>
         <?php templateHeader(false, false, true);?>
 		        
         <!-- Main -->
-        <div id="rt-main" class="hborder">
-        	<div class="rt-container">
+        <div id="rt-main" class="container">
+        	<div class="row-fluid">
             	
-                <div class="span7 rBorder">
+                <div class="span7">
                 	<div class="rt-block">
                     	<div class="rt-mainbody">
                        
@@ -60,6 +60,7 @@ include_once('../../resources/template/template.php');?>
                                         <a class="btn btn-small" data-type="reset" href="javascript:void(false)" onClick="javascript:FormReset('#contact-form');">Limpiar</a>
                                         <a class="btn btn-small" data-type="submit" href="javascript:void(false)" onClick="javascript:FormSubmit('#contact-form');">Revisar</a>
                                     </div>
+                                    <div class="clr"></div>
                                 </form>
                             </div>
                         </div>

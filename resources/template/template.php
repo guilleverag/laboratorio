@@ -1,13 +1,14 @@
 <?php 
 function templateHeaderInclude($root='resources/'){ ?>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="<?php echo $root;?>css/grid-12.css" type="text/css">
     <link rel="stylesheet" href="<?php echo $root;?>lib/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo $root;?>lib/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
+    
     
     <link rel="stylesheet" href="<?php echo $root;?>css/reset.css?<?php echo filemtime(dirname(__FILE__).'/../css/reset.css'); ?>" type="text/css">
     
-    <link rel="stylesheet" href="<?php echo $root;?>css/nivo-slider.css" type="text/css">
     <link rel="stylesheet" href="<?php echo $root;?>css/default.css?<?php echo filemtime(dirname(__FILE__).'/../css/default.css'); ?>" type="text/css">
     <link rel="stylesheet" href="<?php echo $root;?>css/template.min.css?<?php echo filemtime(dirname(__FILE__).'/../css/template.css'); ?>" type="text/css">
 <?php }
@@ -49,6 +50,7 @@ function templateHeader($inicio=true, $lab=false, $exam=false, $noti=false, $con
                                     <li><a href="http://lab.ve2fsoft.com/examenes/resultado/">Resultados Pacientes</a></li>
                                     <li><a href="http://lab.ve2fsoft.com/examenes/resultado/doctores.php">Resultados Doctores</a></li>
                                     <li><a href="http://lab.ve2fsoft.com/examenes/resultado/clientes.php">Resultados Clientes</a></li>
+                                    <li><a href="http://lab.ve2fsoft.com/examenes/">Examenes</a></li>
                                     <li><a href="http://lab.ve2fsoft.com/examenes/presupuesto/">Presupuesto</a></li>
                                     <li><a href="http://lab.ve2fsoft.com/examenes/indicaciones/">Indicaciones</a></li>
                                 </ul>
@@ -74,36 +76,35 @@ function templateHeader($inicio=true, $lab=false, $exam=false, $noti=false, $con
 <?php }
 
 function templateFooter($root='resources/'){?>
-	<div class="footer-container">
-        <div id="rt-copyright">
-            <div class="container">
-                <div class="span12">
-                    <div class="clear"></div>
-                    <div class="rt-block">
-                    	<p class="copyright">
-                    		<span class="sitename">Medex </span>
-                            ©
-                            <span class="date"> 2013</span>
-                            <span class="footerText"></span>
-                              |  
-                            <a href="/joomla_40677/index.php/privacy-policy">Privacy Policy</a>
-                            
-                            <span class="tel">1.800.123.45.67</span>
-                        </p>
-                        
-                    </div>
-                    <div class="clear"></div>
-                    <div class="rt-block totop" style="display: block;">
-                    	<a id="gantry-totop" href="#" style="outline: medium none;">Scroll to Top</a>
+	<div class="footer-container" style="position: relative;">
+        <div id="rt-copyright" class="container">
+            <div class="row-fluid">
+                <div class="span8"> 
+                    <p class="copyright">
+                        <span class="sitename">Medex </span>
+                        &copy;
+                        <span class="date"> 2013</span>
+                        <span class="footerText"></span>
+                        |  
+                        <a href="javascript:void()">Todos los Derechos Reservados</a>
+                    </p>
+                </div>
+                
+                <div class="span4">
+                    <p class="copyright">                  
+                    	<span class="tel">1.800.123.45.67</span>
+                    </p>      
+                    
+                    <div style="display: block;" class="rt-block totop">
+                    	<a style="outline: medium none;" href="#" id="gantry-totop">Volver Arriba</a>
                     </div>
                 </div>
-            	<div class="clear"></div>
             </div>
         </div>
     </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-    <!--<script src="<?php echo $root;?>js/jquery.nivo.slider.js" type="text/javascript"></script>-->
     <script src="<?php echo $root;?>js/mutate.events.js" type="text/javascript"></script>
     <script src="<?php echo $root;?>js/mutate.min.js" type="text/javascript"></script>
     <script src="<?php echo $root;?>lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>

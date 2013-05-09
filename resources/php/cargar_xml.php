@@ -40,6 +40,6 @@ if (is_dir($dir)) {
 		echo "no abrio el dir";
 	}
 }else{
-	echo "no es el dir";
+	@mkdir($dir);
 }
 ?>

@@ -17,7 +17,7 @@ if(isset($_POST['idPaciente'])){
 	AND Fecha='$fecha' 
 	limit 1";
 	
-	$variables = 'back=index&idPaciente='.$idPaciente.'&comprobante='.$comprobante.'&fecha='.$_POST['fecha'];
+	$variables = 'idPaciente='.$idPaciente.'&comprobante='.$comprobante.'&fecha='.$_POST['fecha'];
 }elseif(isset($_POST['CdEmpresa'])){
 	$CdEmpresa=$_POST['CdEmpresa'];//13090;
 	$contrasena=$_POST['contrasena'];//0;

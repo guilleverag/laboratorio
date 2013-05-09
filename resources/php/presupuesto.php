@@ -24,7 +24,7 @@
 					<div id="collapseGrupo'.$r['CdGrupo'].'" class="accordion-body collapse">
 						<div class="accordion-inner">
 							<div id="resultLoading" align="center">
-                            	<img src="../../resources/images/loading.gif">
+                            	<img src="http://lab.ve2fsoft.com/resources/images/loading.gif">
                             </div>
 						</div>
 					</div>
@@ -66,6 +66,34 @@
 			</table>';
 		break;
 		
+		case 'getOnlyExam':
+			$CdGrupo = $_POST['CdGrupo'];
+			$query = 'SELECT g.Descripcion as Grupo, e.IdExamen,
+			e.Descripcion as Examen, e.Costo 
+			FROM grupo g 
+			INNER JOIN examen e ON (g.CdGrupo = e.CdGrupo)
+			WHERE g.CdGrupo = '.$CdGrupo.' 
+			ORDER BY g.CdGrupo, e.Descripcion ASC';
+			
+			$result = mysql_query($query) or die($query.mysql_error());
+			$data='<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Examen</th>
+						</tr>
+					</thead>
+					<tbody>';
+					
+			while($r=mysql_fetch_assoc($result)){
+				$data.='
+				<tr>
+					<td>'.htmlspecialchars(utf8_encode($r['Examen'])).'</td>
+				</tr>';
+			}
+			
+			$data.='</tbody>
+			</table>';
+		break;
 	}
 	
 	echo $data;

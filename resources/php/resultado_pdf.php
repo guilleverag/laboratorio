@@ -52,7 +52,7 @@ ob_start();
 		$ind++;
 ?>
 <div style="margin:0 auto; width:800px; height:1000px; font-family:helvetica;">
-    <table width="100%" cellspacing="0px" cellpadding="0px"><tr height="10px"><td rowspan="5" align="center" width="140px"><img src="../images/logo/logo.png" height="90"></td><td class="pdf_titulo blue">LABORATORIO CLINICO MEDEX, C.A.</td></tr><tr height="10px"><td class="pdf_titulo">Avenida Las Delicias con Calle Comercio, </td></tr><tr><td class="pdf_titulo">Maracay. Edo. Aragua. Venezuela. </td></tr><tr><td class="pdf_titulo">Telefono: +1 800 123 4567 FAX: +1 504 889 9898 </td></tr><tr><td class="pdf_titulo">E-mail: mail@medex.com</td></tr></table>
+    <table width="100%" cellspacing="0px" cellpadding="0px"><tr height="10px"><td rowspan="5" align="center" width="140px"><img src="../images/logo/logo_solo.png" height="90"></td><td class="pdf_titulo blue">LABORATORIO CLINICO MEDEX, C.A.</td></tr><tr height="10px"><td class="pdf_titulo">Avenida Las Delicias con Calle Comercio, </td></tr><tr><td class="pdf_titulo">Maracay. Edo. Aragua. Venezuela. </td></tr><tr><td class="pdf_titulo">Telefono: +1 800 123 4567 FAX: +1 504 889 9898 </td></tr><tr><td class="pdf_titulo">E-mail: mail@medex.com</td></tr></table>
     
     <table width="100%" cellspacing="0px" cellpadding="0px" style="font-size:12px;">
         <tr>

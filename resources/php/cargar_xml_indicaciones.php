@@ -8,16 +8,16 @@ $dir=getcwd()."/FTP";
 if (is_dir($dir)) {
     if ($dh = opendir($dir)) {
         while (($file = readdir($dh)) !== false) {
-            if($file!="." && $file!=".." && substr($file,0,7)=='Empresa'){
+            if($file!="." && $file!=".." && substr($file,0,12)=='Indicaciones'){
 				$xml = simplexml_load_file($dir.'/'.$file);
 
-				foreach($xml->Empresa as $web){
-					$query='DELETE FROM empresa WHERE CdEmpresa='.$web->CdEmpresa;
+				foreach($xml->Indicaciones as $web){
+					/*$query='DELETE FROM empresa WHERE CdEmpresa='.$web->CdEmpresa;
 					mysql_query($query);
 					
 					
 					$query='INSERT INTO empresa VALUES ('.$web->CdEmpresa.',"'.$web->RazonSocial.'","'.$web->Contrasena.'")';
-					mysql_query($query);
+					mysql_query($query);*/
 				}
 				unlink($dir.'/'.$file);
 			}
