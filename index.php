@@ -249,5 +249,5 @@ include_once('resources/template/template.php');?>
   	</div>
 </body></html>
 <script>
-	$(function() { $.news('#newsContent'); $.news.getLastNews(); });
+	$(function() { $('#labHeader').carousel(); $.news('#newsContent'); $.news.getLastNews(); });
 </script>

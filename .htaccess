@@ -191,6 +191,7 @@ AddType	text/vtt				vtt
 <IfModule mod_headers.c>
 	# Try removing etag headers (if it's coming from proxy for example)
 	Header unset ETag
+	Header set Connection keep-alive
 </IfModule>
 
 # Remove ETags
