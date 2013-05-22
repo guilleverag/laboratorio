@@ -18,8 +18,9 @@
     class phpFastCache {
 
         public static $storage = "auto"; // PDO | mpdo | Auto | Files | memcache | apc | wincache
+		public static $period = 2592000; //cache time month time
 
-        public static $autosize = 40; // Megabytes
+        public static $autosize = 400; // Megabytes
         public static $path = "";
         public static $securityKey = "cache.storage";
         public static $option = array();

@@ -2,7 +2,6 @@
 	include('conexion.php');
 	include('class/php_fast_cache.php');
 	phpFastCache::$storage = "auto";
-	conectar();
 	
 	$type = $_POST['type'];
 	switch($type){
@@ -10,6 +9,7 @@
 			$data = phpFastCache::get("presupuesto_getGrupo");
 			
 			if($data == NULL){
+				conectar();
 				$query = 'SELECT CdGrupo, Descripcion as Grupo
 				FROM grupo 
 				ORDER BY CdGrupo ASC';
@@ -37,7 +37,7 @@
 				}
 				
 				$data.='</div>';
-				phpFastCache::set("presupuesto_getGrupo",$data,180);
+				phpFastCache::set("presupuesto_getGrupo",$data,phpFastCache::$period);
 			}
 		break;
 		
@@ -46,6 +46,7 @@
 			$data = phpFastCache::get("presupuesto_getExam_$CdGrupo");
 			
 			if($data == NULL){	
+				conectar();
 				$query = 'SELECT g.Descripcion as Grupo, e.IdExamen,
 				e.Descripcion as Examen, e.Costo 
 				FROM grupo g 
@@ -75,7 +76,7 @@
 				$data.='</tbody>
 				</table>';
 				
-				phpFastCache::set("presupuesto_getExam_$CdGrupo",$data,180);
+				phpFastCache::set("presupuesto_getExam_$CdGrupo",$data,phpFastCache::$period);
 			}
 		break;
 		
@@ -83,7 +84,8 @@
 			$CdGrupo = $_POST['CdGrupo'];
 			$data = phpFastCache::get("presupuesto_getOnlyExam_$CdGrupo");
 			
-			if($data == NULL){	
+			if($data == NULL){
+				conectar();	
 				$query = 'SELECT g.Descripcion as Grupo, e.IdExamen,
 				e.Descripcion as Examen, e.Costo 
 				FROM grupo g 
@@ -110,7 +112,7 @@
 				$data.='</tbody>
 				</table>';
 				
-				phpFastCache::set("presupuesto_getOnlyExam_$CdGrupo", $data, 180);
+				phpFastCache::set("presupuesto_getOnlyExam_$CdGrupo", $data, phpFastCache::$period);
 			}
 		break;
 	}
