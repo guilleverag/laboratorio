@@ -38,8 +38,7 @@
 				
 				$data.='</div>';
 				phpFastCache::set("presupuesto_getGrupo",$data,180);
-				echo "<script>console.log('getGrupo: cache set for 180 seg');</script>";
-			}else echo "<script>console.log('getGrupo: from cache');</script>";
+			}
 		break;
 		
 		case 'getExam':	
@@ -77,8 +76,7 @@
 				</table>';
 				
 				phpFastCache::set("presupuesto_getExam_$CdGrupo",$data,180);
-				echo "<script>console.log('getExam: cache set for 180 seg');</script>";
-			}else echo "<script>console.log('getExam: from cache');</script>";
+			}
 		break;
 		
 		case 'getOnlyExam':
@@ -113,8 +111,7 @@
 				</table>';
 				
 				phpFastCache::set("presupuesto_getOnlyExam_$CdGrupo", $data, 180);
-				echo "<script>console.log('getOnlyExam: cache set for 180 seg');</script>";
-			}else echo "<script>console.log('getOnlyExam: from cache');</script>";
+			}
 		break;
 	}
 	
