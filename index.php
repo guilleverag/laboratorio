@@ -4,7 +4,7 @@ include_once('resources/template/template.php');?>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Laboratorio Clínico Medex</title>
+	<title>Laboratorio Clínico Medex C.A.</title>
 
     <?php templateHeaderInclude();?>
 </head>
