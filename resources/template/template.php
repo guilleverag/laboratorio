@@ -2,7 +2,7 @@
 function templateHeaderInclude($root='resources/'){ ?>
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?php echo $root;?>lib/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo $root;?>lib/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
     
