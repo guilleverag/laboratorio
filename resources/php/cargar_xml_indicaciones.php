@@ -3,7 +3,7 @@
 include('conexion.php');
 conectar();
 
-$dir=getcwd()."/FTP";
+$dir=getcwd()."/../../FTP";
 
 if (is_dir($dir)) {
     if ($dh = opendir($dir)) {

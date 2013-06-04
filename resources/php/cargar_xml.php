@@ -9,7 +9,7 @@ WHERE `FechaEnviado` < DATE( DATE_SUB( NOW( ) , INTERVAL 30 DAY ) )';
 mysql_query($query);
 
 
-$dir=getcwd()."/FTP";
+$dir=getcwd()."/../../FTP";
 
 $caracteres = 	array('"',' ','\\n\\r','\\','\\\\b','\\\\b 0');
 $convert = 		array('\'','&nbsp;','<br>','\\\\','\\\\b ','\\\\b0 ');
