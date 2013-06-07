@@ -81,7 +81,7 @@ switch($_POST['type']){
 			echo json_encode(array('success'=>false));		
 	break;
 	default:
-		$data='<table class="table table-striped table-hover">
+		$data='<table id="tablesorter" class="table table-striped table-hover">
 			<thead>
 				<tr>
 					'.(isset($_POST['CdEmpresa']) ? '<th>Impreso</th>' : '').'

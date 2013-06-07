@@ -18,7 +18,7 @@
         	<div class="row-fluid">
             	<div class="span12">
                 	<div class="rt-block">
-                    	<div class="itemHeader">
+                    	<div class="itemHeader" style="height:40px !important;">
                             <div class="module-title">
                                 <div class="span9">
                                     <h2 class="title" id="resultTitle">
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="rt-mainbody span12"> 
+                        <div class="rt-mainbody"> 
                         	<div class="resultContent" id="resultContent"></div>
                             <div id="resultLoading" align="center">
                             	<img src="../../resources/images/loading.gif">
@@ -47,6 +47,7 @@
         
         <!-- Footer -->
     	<?php templateFooter('../../resources/');?>
+        <script src="../../resources/js/jquery.tablesorter.js" type="text/javascript"></script>
   	</div>
 </body></html>
 <script>
@@ -65,6 +66,7 @@
 			success:	function(data){
 				$('#resultLoading').hide();
 				$('#resultContent').html(data);
+				$("#tablesorter").tablesorter({sortList: [[1,0]]});
 			}
 		});
 	});
