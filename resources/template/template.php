@@ -2,7 +2,7 @@
 function templateHeaderInclude($root='resources/'){ ?>
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="<?php echo $root;?>lib/jquery-ui.css">
     <link rel="stylesheet" href="<?php echo $root;?>lib/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo $root;?>lib/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
     
@@ -103,8 +103,8 @@ function templateFooter($root='resources/'){?>
         </div>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="<?php echo $root;?>lib/jquery.min.js"></script>
+    <script src="<?php echo $root;?>lib/jquery-ui.min.js"></script>
     <script src="<?php echo $root;?>js/mutate.events.js" type="text/javascript"></script>
     <script src="<?php echo $root;?>js/mutate.min.js" type="text/javascript"></script>
     <script src="<?php echo $root;?>lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
